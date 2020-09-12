@@ -1,0 +1,56 @@
+// FLEXBOX
+@mixin flex-center {
+   display: flex;
+   justify-content: center;
+}
+
+@mixin flex-between {
+   display: flex;
+   justify-content: space-between;
+}
+
+@mixin flex-evenly {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+// IMAGES 
+@mixin back-img($back-img) {
+   background-image: $back-img;
+   background-repeat: no-repeat;
+   background-size: 100vw;
+}
+
+// FONTS
+@mixin serif {
+   font-family: 'Oleo Script', cursive;
+}
+
+@mixin serifWeight($weight) {
+   font-family: 'Oleo Script', cursive;
+   font-weight: $weight;
+}
+
+@mixin sanSerif {
+   font-family: 'Raleway', sans-serif;
+}
+
+@mixin sanSerifItalic {
+   font-family: 'Raleway', sans-serif;
+   font-style: italic;
+}
+
+@mixin sanSerifItalicWeight($weight) {
+   font-family: 'Raleway', sans-serif;
+   font-style: italic;
+   font-weight: ($fontWeight);
+}
+
+@mixin sanSerifWeight($fontWeight){
+   font-family: 'Oleo Script', cursive;
+}
+
+@mixin sanSerifItalic {
+   font-family: 'Raleway', sans-serif;
+   font-style: italic;
+}

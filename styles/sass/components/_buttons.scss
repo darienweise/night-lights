@@ -1,0 +1,25 @@
+.wrapper {
+   border: red 3px dotted;
+   max-width: 90vw;
+}
+
+.container {
+   background-color: $accent;
+   display: grid;
+   grid-auto-flow: column;   
+}
+
+button {
+   background-color: inherit;
+   border: none;
+   padding: 0;
+   overflow: hidden;
+}
+
+.bulb {
+   background-color: $light;
+   width: 2rem;
+   height: 2rem;
+   border: solid $border 1px;
+   border-radius: 50%;
+}

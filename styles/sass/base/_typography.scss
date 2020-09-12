@@ -1,0 +1,13 @@
+h1 {
+   @include serifWeight (bold);
+   font-size: 8rem;
+   text-shadow: 4px 4px 5px #FF009D5F;
+   -webkit-text-stroke: 1px $light ;
+}
+
+body {
+   background-color: $secondary;
+   dot {
+      
+   }
+}

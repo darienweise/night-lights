@@ -1,0 +1,29 @@
+@import './header';
+@import './main';
+@import './footer';
+
+// GENERAL STYLES
+html {
+   font-size: 62.5%;
+}
+
+// body {
+//    background-color: $lightest;
+// }
+
+.wrapper {
+   max-width: 85vw;
+   margin: 0 auto;
+   padding: 0;
+}
+
+h1,h2,h3,h4,h5,
+p {
+   margin: 0;
+   padding: 0;
+}
+
+li,
+li a {
+   text-decoration: none;
+}

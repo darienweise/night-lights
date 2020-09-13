@@ -1,5 +1,5 @@
 .wrapper {
-   border: red 3px dotted;
+   border: $accent 3px solid;
    max-width: 90vw;
 }
 
@@ -7,13 +7,15 @@
    background-color: $accent;
    display: grid;
    grid-auto-flow: column;   
+   overflow: hidden;
+   margin: 10px;
+   max-width: 90vw;
 }
 
 button {
    background-color: inherit;
    border: none;
-   padding: 0;
-   overflow: hidden;
+   padding: 0 5px;
 }
 
 .bulb {

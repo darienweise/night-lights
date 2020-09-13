@@ -1,9 +1,9 @@
 $(function(){
          // Add event listener for user click 
    $('button').on('click', function(){
-            $(this).button('border-color', '#ffffff');
-         })
-      })
+      $(this).button('border-color', '#ffffff');
+   })
+})
       
       
       

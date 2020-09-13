@@ -1,9 +1,23 @@
+// create a const containing values? 
+const lightColors = {
+   green: `gLight`,
+   red: `rLight`,
+   blue: `bLight`
+}
+
 $(function(){
          // Add event listener for user click 
-   $('button').on('click', function(){
-      $(this).button('border-color', '#ffffff');
+         // INSIDE FUNCTION possibly add toggle/dropdown parameter?
+   $(".button").on('click', function(){
+      $(this).css('background-color', "#ffffff");
    })
+
+
 })
+
+// $("div").on("click", function() {
+//    $(this).css({ backgroundColor: "red" });
+// });
       
       
       

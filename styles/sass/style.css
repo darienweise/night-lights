@@ -247,31 +247,27 @@ body {
   background-color: #0E001C;
 }
 
-.wrapper {
-  border: red 3px dotted;
+main .wrapper {
+  border: #FF009D5F 3px solid;
   max-width: 90vw;
 }
 
-.container {
-  background-color: #FF009D5F;
+main .wrapper .container {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: column;
-}
-
-button {
-  background-color: inherit;
-  border: none;
-  padding: 0;
   overflow: hidden;
+  margin: 10px;
+  max-width: 90vw;
 }
 
-.bulb {
-  background-color: #b9b48c;
-  width: 2rem;
-  height: 2rem;
+main .wrapper .container .button {
+  background-color: #000000;
+  width: 2.2rem;
+  height: 2.2rem;
   border: solid #2C2981 1px;
   border-radius: 50%;
+  margin: 5px;
 }
 
 html {

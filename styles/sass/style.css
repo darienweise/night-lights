@@ -244,32 +244,54 @@ h1 {
 }
 
 main .wrapper .container {
-  margin-top: 4rem;
+  margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-height: 70vh;
-  width: 100%;
-  overflow: hidden;
 }
 
-main .wrapper .container .button {
+main .wrapper .game-container {
+  margin-top: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[35];
+      grid-template-columns: repeat(35, auto);
+  grid-gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .wrapper .game-container .button {
   background-color: #000000;
   height: 3rem;
   width: 3rem;
-  margin: 0.3rem;
   border: #2C2981 1px solid;
   border-radius: 50%;
 }
 
-main .wrapper .container .button:hover {
+main .wrapper .game-container .button:hover {
   background-color: white;
 }
 
-main .wrapper .container .button:focus {
+main .wrapper .game-container .button:focus {
   background-color: white;
+}
+
+main .wrapper .game-container .button .red {
+  background-color: #FF003B;
+}
+
+main .wrapper .game-container .button .blue {
+  background-color: #FF003B;
+}
+
+main .wrapper .game-container .button .yellow {
+  background-color: #FF003B;
+}
+
+main .wrapper .game-container .button .magenta {
+  background-color: #FF003B;
 }
 
 html {

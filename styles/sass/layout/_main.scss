@@ -1,20 +1,54 @@
+// main {
+//    .wrapper {
+
+      
+//       .container{
+//          // border: red dotted 1px;
+//          margin-top: 4rem;
+//          display: flex;
+//          flex-wrap: wrap;
+//          max-height: 70vh;
+//          width: 100%;
+//          overflow: hidden;
+//          .button {
+//             background-color: $dark;
+//             height: 3rem;
+//             width: 3rem;
+//             margin: 0.3rem;
+//             border: $border 1px solid;
+//             border-radius: 50%;
+//             &:hover {
+//                background-color: white;
+//             }
+//             &:focus {
+//                background-color: white;
+//             }
+//          }
+//       }
+//    }
+   
+// }
+
+
 main {
    .wrapper {
 
-      
-      .container{
+      .container {
+         margin: 2rem 0;
+         display: flex;
+      }
+      .game-container{
          // border: red dotted 1px;
          margin-top: 4rem;
-         display: flex;
-         flex-wrap: wrap;
-         max-height: 70vh;
-         width: 100%;
-         overflow: hidden;
+         display: grid;
+         grid-template-columns: repeat(35, auto);
+         grid-gap: 10px;
+         justify-content: center;
          .button {
             background-color: $dark;
             height: 3rem;
             width: 3rem;
-            margin: 0.3rem;
+            // margin: 0.3rem;
             border: $border 1px solid;
             border-radius: 50%;
             &:hover {
@@ -22,6 +56,18 @@ main {
             }
             &:focus {
                background-color: white;
+            }
+            .red {
+            background-color: $rLight;
+            }
+            .blue{
+            background-color: $rLight;
+            }
+            .yellow{
+               background-color: $rLight;
+            }
+            .magenta{
+               background-color: $rLight;
             }
          }
       }

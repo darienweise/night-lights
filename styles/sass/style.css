@@ -255,7 +255,7 @@ main .wrapper .container {
   overflow: hidden;
 }
 
-main .wrapper .container #bkgd {
+main .wrapper .container .button {
   background-color: #000000;
   height: 3rem;
   width: 3rem;
@@ -264,11 +264,11 @@ main .wrapper .container #bkgd {
   border-radius: 50%;
 }
 
-main .wrapper .container #bkgd:hover {
+main .wrapper .container .button:hover {
   background-color: white;
 }
 
-main .wrapper .container #bkgd:focus {
+main .wrapper .container .button:focus {
   background-color: white;
 }
 

@@ -1,23 +1,25 @@
-// create a const containing values? 
-const lightColors = {
-   green: `gLight`,
-   red: `rLight`,
-   blue: `bLight`
-}
-
 $(function(){
          // Add event listener for user click 
          // INSIDE FUNCTION possibly add toggle/dropdown parameter?
-   $(".button").on('click', function(){
-      $(this).css('background-color', "#ffffff");
-   })
 
-
+      if(".button".id=='bkgd'){
+         $('.button').on('click', function(){
+         $('.button').css('background-color', "#fffffff");
+      })
+      }
+   
 })
+   // $('#bkgd').on('click', function(){
+   //    $(this).css('background-color', "#ffffff");
+   // })
+// get div id to work instead of class
+// $('#map, #n_america, #euro').click(function(){
+//    if (this.id=='euro'){ ... }
+//  });
+// $('#map, #n_america, #euro').click(function(){
+//    if (this.id=='euro'){ ... }
+//  });
 
-// $("div").on("click", function() {
-//    $(this).css({ backgroundColor: "red" });
-// });
       
       
       

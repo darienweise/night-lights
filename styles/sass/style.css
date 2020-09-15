@@ -270,21 +270,6 @@ main .wrapper nav .lightColors {
   display: flex;
 }
 
-main .wrapper nav .lightColors .bulb {
-  background-color: #411CA8;
-  color: #b9b48c;
-  height: 2rem;
-  width: 7rem;
-  margin: 10px;
-  text-align: center;
-  padding: 5px;
-}
-
-main .wrapper nav .lightColors .bulb:hover {
-  background-color: #FF009D5F;
-  color: #b9b48c;
-}
-
 main .wrapper .container {
   margin: 2rem 0;
   margin-top: 4rem;
@@ -328,6 +313,29 @@ main .wrapper .container .button .yellow {
 
 main .wrapper .container .button .magenta {
   background-color: #FF003B;
+}
+
+.delete,
+.bulb {
+  background-color: #411CA8;
+  color: #b9b48c;
+  height: 2rem;
+  width: 7rem;
+  margin: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
+.delete:hover,
+.bulb:hover {
+  background-color: #FF009D5F;
+  color: #b9b48c;
+}
+
+.delete:focus,
+.bulb:focus {
+  background-color: #FF009D5F;
+  color: #b9b48c;
 }
 
 html {

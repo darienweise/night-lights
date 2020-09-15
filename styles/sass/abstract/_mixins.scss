@@ -47,7 +47,8 @@
 }
 
 @mixin sanSerifWeight($fontWeight){
-   font-family: 'Oleo Script', cursive;
+   font-family: 'Raleway', sans-serif;
+   font-weight: ($font-weight);
 }
 
 @mixin sanSerifItalic {

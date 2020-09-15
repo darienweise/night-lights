@@ -1,4 +1,5 @@
 main {
+   margin-bottom: 3rem;
    .wrapper {
       .container {
          margin: 2rem 0;
@@ -7,6 +8,7 @@ main {
          grid-template-columns: repeat(35, auto);
          grid-gap: 6px;
          justify-content: center;
+         max-width: 90vw;
          .button {
             background-color: $dark;
             height: 2.8rem;
@@ -45,13 +47,13 @@ main {
    width: 7rem;
    margin: 10px;
    text-align: center;
-   padding: 5px;
+   padding: 2px;
    &:hover {
       background-color: $accent;
       color: $light;
    }
    &:focus {
-      background-color: $accent;
-      color: $light;
+      background-color: $light;
+      color: #c4eeff49;
    }
 }

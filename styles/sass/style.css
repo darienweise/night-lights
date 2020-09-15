@@ -259,9 +259,15 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 4rem 0 0 0;
 }
 
 nav .lightColors {
@@ -270,10 +276,21 @@ nav .lightColors {
   display: flex;
 }
 
+nav h1 {
+  font-family: 'Oleo Script', cursive;
+  margin: 20px 10px;
+}
+
+nav .delete,
 nav .bulb {
+  font-family: 'Raleway', sans-serif;
   color: #000000;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.29rem;
+  font-weight: 700;
+}
+
+nav .delete {
+  color: white;
 }
 
 nav .wLight {
@@ -300,6 +317,22 @@ nav .pLight {
   background-color: pink;
 }
 
+@media (max-width: 560px) {
+  nav {
+    display: block;
+  }
+  nav .delete,
+  nav .bulb {
+    font-size: 1rem;
+    margin: 5px;
+    padding: 4px;
+  }
+}
+
+main {
+  margin-bottom: 3rem;
+}
+
 main .wrapper .container {
   margin: 2rem 0;
   margin-top: 4rem;
@@ -311,6 +344,7 @@ main .wrapper .container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 90vw;
 }
 
 main .wrapper .container .button {
@@ -353,7 +387,7 @@ main .wrapper .container .button .magenta {
   width: 7rem;
   margin: 10px;
   text-align: center;
-  padding: 5px;
+  padding: 2px;
 }
 
 .delete:hover,
@@ -364,8 +398,8 @@ main .wrapper .container .button .magenta {
 
 .delete:focus,
 .bulb:focus {
-  background-color: #FF009D5F;
-  color: #b9b48c;
+  background-color: #b9b48c;
+  color: #c4eeff49;
 }
 
 html {

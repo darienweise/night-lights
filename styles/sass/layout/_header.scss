@@ -1,14 +1,27 @@
 nav{
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+   align-items: center;
+   margin: 4rem 0 0 0;
    .lightColors {
       display: flex;
-   }
 
+   }
+   h1 {
+      @include serif;
+      margin: 20px 10px;
+   }
+   .delete,
    .bulb {
+      @include sanSerif;
       color: $dark;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.29rem;
+      font-weight: 700;
+   }
+   
+   .delete {
+      color: white;
    }
    .wLight {
       background-color: white;
@@ -27,5 +40,17 @@ nav{
    }
    .pLight {
       background-color: pink;
+   }
+}
+
+@media (max-width: 560px) {
+   nav {
+      display: block;
+      .delete,
+      .bulb{
+         font-size: 1rem;
+         margin: 5px;
+         padding: 4px;
+      }
    }
 }

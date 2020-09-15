@@ -267,7 +267,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 4rem 0 0 0;
 }
 
 nav .lightColors {
@@ -281,6 +280,7 @@ nav h1 {
   margin: 20px 10px;
 }
 
+nav .variations,
 nav .delete,
 nav .bulb {
   font-family: 'Raleway', sans-serif;
@@ -289,8 +289,25 @@ nav .bulb {
   font-weight: 700;
 }
 
+nav .variations,
 nav .delete {
   color: white;
+}
+
+nav .delete,
+nav .variations div {
+  border: 1px solid #411CA8;
+  width: 14rem;
+  margin: 4px;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+nav .delete:hover,
+nav .variations div:hover {
+  background-color: white;
+  color: #411CA8;
 }
 
 nav .wLight {
@@ -334,8 +351,6 @@ main {
 }
 
 main .wrapper .container {
-  margin: 2rem 0;
-  margin-top: 4rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[35];
@@ -345,12 +360,13 @@ main .wrapper .container {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 90vw;
+  margin: 3rem 0;
 }
 
 main .wrapper .container .button {
   background-color: #000000;
-  height: 2.8rem;
-  width: 2.8rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border: #2C2981 1px solid;
   border-radius: 50%;
 }
@@ -379,7 +395,6 @@ main .wrapper .container .button .magenta {
   background-color: #FF003B;
 }
 
-.delete,
 .bulb {
   background-color: #411CA8;
   color: #b9b48c;
@@ -390,16 +405,25 @@ main .wrapper .container .button .magenta {
   padding: 2px;
 }
 
-.delete:hover,
 .bulb:hover {
-  background-color: #FF009D5F;
-  color: #b9b48c;
+  background-color: #411CA8;
+  color: white;
 }
 
-.delete:focus,
 .bulb:focus {
   background-color: #b9b48c;
   color: #c4eeff49;
+}
+
+@media (max-width: 1184px) {
+  .desktopDisplay {
+    visibility: hidden;
+  }
+  .button {
+    background-color: #000000;
+    height: 2.4rem;
+    width: 2.4rem;
+  }
 }
 
 html {

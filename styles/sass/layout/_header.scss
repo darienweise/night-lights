@@ -3,15 +3,15 @@ nav{
    justify-content: space-evenly;
    flex-wrap: wrap;
    align-items: center;
-   margin: 4rem 0 0 0;
    .lightColors {
       display: flex;
-
    }
    h1 {
       @include serif;
       margin: 20px 10px;
    }
+
+   .variations,
    .delete,
    .bulb {
       @include sanSerif;
@@ -20,8 +20,22 @@ nav{
       font-weight: 700;
    }
    
+   .variations,
    .delete {
       color: white;
+   }
+   .delete,
+   .variations div{
+      border: 1px solid $primary;
+      width: 14rem;
+      margin: 4px;
+      padding: 5px 10px;
+      text-align: center;
+      display: inline-block;
+      &:hover {
+         background-color: white;
+         color: $primary;
+      }
    }
    .wLight {
       background-color: white;

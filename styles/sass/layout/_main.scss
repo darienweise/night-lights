@@ -2,18 +2,16 @@ main {
    margin-bottom: 3rem;
    .wrapper {
       .container {
-         margin: 2rem 0;
-         margin-top: 4rem;
          display: grid;
          grid-template-columns: repeat(35, auto);
          grid-gap: 6px;
          justify-content: center;
          max-width: 90vw;
+         margin: 3rem 0;
          .button {
             background-color: $dark;
-            height: 2.8rem;
-            width: 2.8rem;
-            // margin: 0.3rem;
+            height: 2.5rem;
+            width: 2.5rem;
             border: $border 1px solid;
             border-radius: 50%;
             &:hover {
@@ -37,9 +35,8 @@ main {
          }
       }
    }
-   
 }
-.delete,
+// LIGHT BULB CREATION
 .bulb{
    background-color: $primary;
    color: $light;
@@ -49,11 +46,24 @@ main {
    text-align: center;
    padding: 2px;
    &:hover {
-      background-color: $accent;
-      color: $light;
+      background-color: $primary;
+      color: white;
+      
    }
+   // ACCESSIBILITY 
    &:focus {
       background-color: $light;
       color: #c4eeff49;
+   }
+}
+
+@media (max-width: 1184px) {
+   .desktopDisplay {
+      visibility: hidden;
+   }
+   .button {
+      background-color: $dark;
+      height: 2.4rem;
+      width: 2.4rem;
    }
 }

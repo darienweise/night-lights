@@ -57,13 +57,3 @@ main {
    }
 }
 
-@media (max-width: 1184px) {
-   .desktopDisplay {
-      visibility: hidden;
-   }
-   .button {
-      background-color: $dark;
-      height: 2.4rem;
-      width: 2.4rem;
-   }
-}

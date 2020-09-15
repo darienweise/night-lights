@@ -415,17 +415,6 @@ main .wrapper .container .button .magenta {
   color: #c4eeff49;
 }
 
-@media (max-width: 1184px) {
-  .desktopDisplay {
-    visibility: hidden;
-  }
-  .button {
-    background-color: #000000;
-    height: 2.4rem;
-    width: 2.4rem;
-  }
-}
-
 html {
   font-size: 62.5%;
 }

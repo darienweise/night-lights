@@ -47,18 +47,18 @@ $(function(){
          $(this).css('background-color', "inherit")
       })
    })
-   // $('.button').click(function(){
-   //    $(this).css('background-color', "magenta");
-   // }) 
    
-
    $('.clear').on('click', function(){
-      confirm('Do you want to clear?');
-      if(Boolean == true){ ($('.button').css('background-color', "black")); 
-      } else {
-         alert('That was a close one... You almost deleted your work!');
+      confirm ('Do you want to clear?');
+      if (Boolean == true){
+         $('button').css('background-color', "black")
       }
    })
+   // $('.clear').on('click', function(){
+   //    confirm('Do you want to clear?');
+   //    if(Boolean == true)($('.button').css('background-color', "plum"))
+   //    });
+   // });
 })
    
 

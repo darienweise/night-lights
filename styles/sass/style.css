@@ -255,7 +255,7 @@ label {
   font-size: 3rem;
 }
 
-main .wrapper nav {
+nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,7 +264,7 @@ main .wrapper nav {
           justify-content: space-between;
 }
 
-main .wrapper nav .lightColors {
+nav .lightColors {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

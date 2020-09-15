@@ -48,12 +48,10 @@ $(function(){
       })
    })
    
-   $('.clear').on('click', function(){
-      confirm ('Do you want to clear?');
-      if (Boolean == true){
-         $('button').css('background-color', "black")
-      }
+   $('.clear').click(function(){
+      $('.button').css('background-color', "black")
    })
+   
    // $('.clear').on('click', function(){
    //    confirm('Do you want to clear?');
    //    if(Boolean == true)($('.button').css('background-color', "plum"))

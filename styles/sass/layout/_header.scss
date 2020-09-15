@@ -1,7 +1,31 @@
 nav{
    display: flex;
    justify-content: space-between;
-  .lightColors {
-     display: flex;
-  }
+   .lightColors {
+      display: flex;
+   }
+
+   .bulb {
+      color: $dark;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 1.5rem;
+   }
+   .wLight {
+      background-color: white;
+   }
+   .mLight {
+      background-color: magenta;
+   }
+   .gLight {
+      background-color: lime;
+   }
+   .cLight {
+      background-color: cyan;
+   }
+   .yLight {
+      background-color: yellow;
+   }
+   .pLight {
+      background-color: pink;
+   }
 }

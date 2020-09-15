@@ -270,6 +270,36 @@ nav .lightColors {
   display: flex;
 }
 
+nav .bulb {
+  color: #000000;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.5rem;
+}
+
+nav .wLight {
+  background-color: white;
+}
+
+nav .mLight {
+  background-color: magenta;
+}
+
+nav .gLight {
+  background-color: lime;
+}
+
+nav .cLight {
+  background-color: cyan;
+}
+
+nav .yLight {
+  background-color: yellow;
+}
+
+nav .pLight {
+  background-color: pink;
+}
+
 main .wrapper .container {
   margin: 2rem 0;
   margin-top: 4rem;

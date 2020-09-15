@@ -2,6 +2,12 @@
    "folders": [
       {
          "path": "."
+      },
+      {
+         "path": "../../week-4/day-4/art-app-start"
+      },
+      {
+         "path": "../../week-4/day-1"
       }
    ],
    "settings": {

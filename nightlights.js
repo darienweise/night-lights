@@ -1,14 +1,40 @@
+// const lightColor = ;
+
 $(function(){
          // Add event listener for user click 
          // INSIDE FUNCTION possibly add toggle/dropdown parameter?
-   $('.button').on('click', function(){
-      $(this).css('background-color', "#ffffff");
+   $('.wLight').click(function(){
+      console.log('clicked')
    })
-      
+
+
+   // $('.button').click(function(){
+   //    $(this).css('background-color', "magenta");
+   // }) 
    
+
+   $('.clear').on('click', function(){
+      confirm('Do you want to clear?');
+      if(Boolean == true){ ($('.button').css('background-color', "black")); 
+      } else {
+         alert('That was a close one... You almost deleted your work!');
+      }
+   })
 })
    
-      
+
+// if ($('.button').css("background-color")=="#FDFFEB"){
+//    $('.button').on('click', function(){
+//    $(this).css('background-color', "blue");
+// })
+// }
+
+// $('.button').on('click', function(){
+//    if($('.button').css("background-color") === "#FDFFEB") {
+//     $('.button').css('background-color', "#333333");
+//    }
+// })
+// if( $(this).css("background-color") == "Crimson" )  
       
       
          // if radio button is clicked

@@ -243,54 +243,90 @@ h1 {
   -webkit-text-stroke: 1px #b9b48c;
 }
 
-main .wrapper .container {
-  margin: 2rem 0;
+form {
+  margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .wrapper .game-container {
+label {
+  color: #b9b48c;
+  font-size: 3rem;
+}
+
+main .wrapper nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .wrapper nav .lightColors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .wrapper nav .lightColors .bulb {
+  background-color: #411CA8;
+  color: #b9b48c;
+  height: 2rem;
+  width: 7rem;
+  margin: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
+main .wrapper nav .lightColors .bulb:hover {
+  background-color: #FF009D5F;
+  color: #b9b48c;
+}
+
+main .wrapper .container {
+  margin: 2rem 0;
   margin-top: 4rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[35];
       grid-template-columns: repeat(35, auto);
-  grid-gap: 10px;
+  grid-gap: 6px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-main .wrapper .game-container .button {
+main .wrapper .container .button {
   background-color: #000000;
-  height: 3rem;
-  width: 3rem;
+  height: 2.8rem;
+  width: 2.8rem;
   border: #2C2981 1px solid;
   border-radius: 50%;
 }
 
-main .wrapper .game-container .button:hover {
+main .wrapper .container .button:hover {
   background-color: white;
 }
 
-main .wrapper .game-container .button:focus {
+main .wrapper .container .button:focus {
   background-color: white;
 }
 
-main .wrapper .game-container .button .red {
+main .wrapper .container .button .red {
   background-color: #FF003B;
 }
 
-main .wrapper .game-container .button .blue {
+main .wrapper .container .button .blue {
   background-color: #FF003B;
 }
 
-main .wrapper .game-container .button .yellow {
+main .wrapper .container .button .yellow {
   background-color: #FF003B;
 }
 
-main .wrapper .game-container .button .magenta {
+main .wrapper .container .button .magenta {
   background-color: #FF003B;
 }
 

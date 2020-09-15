@@ -1,53 +1,36 @@
-// main {
-//    .wrapper {
-
-      
-//       .container{
-//          // border: red dotted 1px;
-//          margin-top: 4rem;
-//          display: flex;
-//          flex-wrap: wrap;
-//          max-height: 70vh;
-//          width: 100%;
-//          overflow: hidden;
-//          .button {
-//             background-color: $dark;
-//             height: 3rem;
-//             width: 3rem;
-//             margin: 0.3rem;
-//             border: $border 1px solid;
-//             border-radius: 50%;
-//             &:hover {
-//                background-color: white;
-//             }
-//             &:focus {
-//                background-color: white;
-//             }
-//          }
-//       }
-//    }
-   
-// }
-
-
 main {
    .wrapper {
-
+      nav{
+         display: flex;
+         justify-content: space-between;
+        .lightColors {
+           display: flex;
+         .bulb{
+            background-color: $primary;
+            color: $light;
+            height: 2rem;
+            width: 7rem;
+            margin: 10px;
+            text-align: center;
+            padding: 5px;
+            &:hover {
+               background-color: $accent;
+               color: $light;
+            }
+         }
+        }
+      }
       .container {
          margin: 2rem 0;
-         display: flex;
-      }
-      .game-container{
-         // border: red dotted 1px;
          margin-top: 4rem;
          display: grid;
          grid-template-columns: repeat(35, auto);
-         grid-gap: 10px;
+         grid-gap: 6px;
          justify-content: center;
          .button {
             background-color: $dark;
-            height: 3rem;
-            width: 3rem;
+            height: 2.8rem;
+            width: 2.8rem;
             // margin: 0.3rem;
             border: $border 1px solid;
             border-radius: 50%;
